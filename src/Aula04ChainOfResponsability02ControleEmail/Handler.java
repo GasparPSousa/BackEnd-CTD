@@ -7,10 +7,12 @@ public abstract class Handler {
 
 
     public Handler getSeguinte(){
+
         return this.seguinteManipulador;
     }
 
     public void setSeguinte(Handler s) {
+
         this.seguinteManipulador = s;
     }
 

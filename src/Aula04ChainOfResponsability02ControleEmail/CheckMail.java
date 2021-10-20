@@ -19,6 +19,7 @@ public class CheckMail {
     }
 
     public void verificar(Mail eMail) {
+
         initial.verificar(eMail);
     }
 
