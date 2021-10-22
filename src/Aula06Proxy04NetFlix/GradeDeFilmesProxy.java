@@ -7,18 +7,22 @@ public class GradeDeFilmesProxy implements IGradeDeFilmes{
     private IP ip;
 
     public IP getIP() {
+
         return ip;
     }
 
     public void setIp(IP ip) {
+
         this.ip = ip;
     }
 
     public GradeDeFilmesProxy(GradeDeFilmes grade) {
+
         this.setGrade(grade);
     }
 
     public void setGrade(GradeDeFilmes grade) {
+
         this.grade = grade;
     }
 
