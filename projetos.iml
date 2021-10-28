@@ -58,20 +58,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$USER_HOME$/Documentos/h2-2019-03-13/h2" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$USER_HOME$/Documentos/h2-2019-03-13/h2/src/java9/src" />
-          <root url="file://$USER_HOME$/Documentos/h2-2019-03-13/h2/src/main" />
-          <root url="file://$USER_HOME$/Documentos/h2-2019-03-13/h2/src/test" />
-          <root url="file://$USER_HOME$/Documentos/h2-2019-03-13/h2/src/tools" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$USER_HOME$/Documentos/h2-2019-03-13/h2/bin/h2-1.4.199.jar!/" />
         </CLASSES>
         <JAVADOC />
