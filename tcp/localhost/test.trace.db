@@ -1,0 +1,12 @@
+2021-10-27 23:26:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" not found; SQL statement:
+SELECT * FROM TEST [42102-199]
+2021-10-27 23:39:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" not found; SQL statement:
+SELECT * FROM TEST [42102-199]
+2021-10-27 23:39:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" not found; SQL statement:
+SELECT * FROM TEST [42102-199]
+2021-10-27 23:42:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" not found; SQL statement:
+SELECT * FROM TEST [42102-199]
