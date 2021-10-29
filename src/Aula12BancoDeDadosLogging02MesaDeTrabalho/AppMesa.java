@@ -21,14 +21,14 @@ public class AppMesa {
     private static final String sqlInsert01 = "INSERT INTO funcionarios " +
             "(id, nome, sobrenome, idade, profissao, eCLT) VALUES " +
             "(1, 'Zezinho', 'Bandeira', 42, 'Baterista', false), "+
-            "(2, 'Mariazinha', 'Feliz', 32, 'Gerente', true), "+
+            "(2, 'Maria', 'Feliz', 32, 'Gerente', true), "+
             "(1, 'Salchicha', 'Scoobe', 39, 'artista', false), " +
             "(4, 'Ronaldo', 'Fenômeno', 45, 'jogador de futebol', false)";
 
     private static final String sqlInsert02 = "INSERT INTO funcionarios " +
             "(id, nome, sobrenome, idade, profissao, eCLT) VALUES " +
             "(1, 'Zezinho', 'Bandeira', 42, 'Baterista', false), "+
-            "(2, 'Mariazinha', 'Feliz', 32, 'Gerente', true), "+
+            "(2, 'Maria', 'Feliz', 32, 'Gerente', true), "+
             "(3, 'Salchicha', 'Scoobe', 39, 'artista', false), " +
             "(4, 'Ronaldo', 'Fenômeno', 45, 'jogador de futebol', false)";
 
@@ -56,18 +56,23 @@ public class AppMesa {
             connection = getConnection();
             Statement statement = connection.createStatement();
             statement.execute(sqlCreateTable);
+
             try {
                 statement.execute(sqlInsert01);
             } catch (Exception e) {
                 logger.error("Unique index or primary key violation");
             }
+
             statement.execute(sqlInsert02);
+
             statement.execute(sqlUpdate);
-            logger.debug("Alterando a profissao da Mariazinha de Gerente para CTO");
+            logger.debug("Alterando a profissao da Maria de Gerente para CTO");
+
             statement.execute(sqlDelete01);
             logger.info("Excluímos o usuário com id = 3");
+
             statement.execute(sqlDelete02);
-            logger.info("Excluímos o usuário com sobrenome = 'Scoobe' ");
+            logger.info("Excluímos o usuário com sobrenome = Scoobe ");
 
         }
         catch (Exception e) {
