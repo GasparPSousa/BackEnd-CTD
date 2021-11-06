@@ -11,6 +11,7 @@ public class EnderecoService {
     private IDao<Endereco> enderecoIDao;
 
     public EnderecoService(IDao<Endereco> enderecoIDao) {
+
         this.enderecoIDao = enderecoIDao;
     }
 
@@ -20,14 +21,17 @@ public class EnderecoService {
     }
 
     public Optional<Endereco> buscar(Integer id) {
+
         return enderecoIDao.buscar(id);
     }
 
     public List<Endereco> buscarTodos() {
+
         return enderecoIDao.buscarTodos();
     }
 
     public void excluir(Integer id) {
+
         enderecoIDao.exluir(id);
     }
 

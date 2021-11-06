@@ -1,4 +1,4 @@
-package Aula15PadraoDAO02Odontologia.main.dao.configuracao;
+package Aula15PadraoDAO02Odontologia.dao.configuracao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,8 +1,8 @@
-package Aula15PadraoDAO02Odontologia.main.dao.impl;
+package Aula15PadraoDAO02Odontologia.dao.impl;
 
-import Aula15PadraoDAO02Odontologia.main.dao.configuracao.ConfiguracaoJDBC;
-import Aula15PadraoDAO02Odontologia.main.model.Endereco;
-import Aula15PadraoDAO02Odontologia.main.model.Paciente;
+import Aula15PadraoDAO02Odontologia.dao.configuracao.ConfiguracaoJDBC;
+import Aula15PadraoDAO02Odontologia.model.Endereco;
+import Aula15PadraoDAO02Odontologia.model.Paciente;
 import Aula15PadraoDAO02Odontologia.util.Util;
 import org.apache.log4j.Logger;
 

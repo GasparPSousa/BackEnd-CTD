@@ -1,7 +1,7 @@
-package Aula15PadraoDAO02Odontologia.main.dao.impl;
+package Aula15PadraoDAO02Odontologia.dao.impl;
 
-import Aula15PadraoDAO02Odontologia.main.dao.configuracao.ConfiguracaoJDBC;
-import Aula15PadraoDAO02Odontologia.main.model.Endereco;
+import Aula15PadraoDAO02Odontologia.dao.configuracao.ConfiguracaoJDBC;
+import Aula15PadraoDAO02Odontologia.model.Endereco;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
