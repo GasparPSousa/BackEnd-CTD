@@ -15,7 +15,8 @@ public class EnderecoDaoH2 implements IDao<Endereco>{
 
     private ConfiguracaoJDBC configuracaoJDBC;
 
-    public EnderecoDaoH2(ConfiguracaoJDBC configuracaoJDBC) {
+    public EnderecoDaoH2() {
+
         this.configuracaoJDBC = configuracaoJDBC;
     }
 
