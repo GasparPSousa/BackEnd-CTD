@@ -4,6 +4,7 @@ import Aula15PadraoDAO02Odontologia.dao.configuracao.ConfiguracaoJDBC;
 import Aula15PadraoDAO02Odontologia.model.Endereco;
 import Aula15PadraoDAO02Odontologia.model.Paciente;
 import Aula15PadraoDAO02Odontologia.util.Util;
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -27,6 +28,9 @@ public class PacienteDaoH2 implements IDao<Paciente> {
 
     @Override
     public Paciente salvar(Paciente paciente) {
+        // Configuração do Logging
+        BasicConfigurator.configure();
+
         log.debug("Registrando paciente : " + paciente.toString());
 
         Connection conexao = configuracaoJDBC.conectarComBancoDeDados();
@@ -65,6 +69,8 @@ public class PacienteDaoH2 implements IDao<Paciente> {
 
     @Override
     public Optional<Paciente> buscar(Integer id) {
+        // Configuração do Logging
+        BasicConfigurator.configure();
 
         log.debug("Buscando paciente com id : " + id );
 
@@ -94,6 +100,8 @@ public class PacienteDaoH2 implements IDao<Paciente> {
 
     @Override
     public void exluir(Integer id) {
+        // Configuração do Logging
+        BasicConfigurator.configure();
 
         log.debug("Excluindo paciente com id: " + id);
         Connection conexao = configuracaoJDBC.conectarComBancoDeDados();
@@ -114,6 +122,8 @@ public class PacienteDaoH2 implements IDao<Paciente> {
 
     @Override
     public List<Paciente> buscarTodos() {
+        // Configuração do Logging
+        BasicConfigurator.configure();
 
         log.debug("Buscando todos os pacientes.");
 

@@ -21,6 +21,8 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class PacienteServiceTest {
 
+
+
     private static PacienteService pacienteService = new PacienteService(new PacienteDaoH2(new EnderecoDaoH2()));
     private static EnderecoService enderecoService = new EnderecoService(new EnderecoDaoH2());
 
