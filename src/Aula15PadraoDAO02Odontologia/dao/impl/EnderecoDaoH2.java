@@ -25,12 +25,13 @@ public class EnderecoDaoH2 implements IDao<Endereco>{
         Connection conexao = configuracaoJDBC.conectarComBancoDeDados();
         Statement stmt = null;
 
-        String query = String.format("INSERT INTO ENDERECO (rua, numero, cidade, bairro)" +
+        String query = String.format("INSERT INTO endereco (rua, numero, bairro, cidade)" +
                         "VALUES ('%s', '%s', '%s', '%s')",
                 endereco.getRua(),
                 endereco.getNumero(),
-                endereco.getCidade(),
-                endereco.getBairro()
+                endereco.getBairro(),
+                endereco.getCidade()
+
         );
 
         try {
@@ -54,7 +55,7 @@ public class EnderecoDaoH2 implements IDao<Endereco>{
     public Optional<Endereco> buscar(Integer id) {
         Connection conexao = configuracaoJDBC.conectarComBancoDeDados();
         Statement stmt = null;
-        String query = String.format("SELECT id, rua, numero, cidade, bairro FROM endereco WHERE id = '%s'", id);
+        String query = String.format("SELECT id, rua, numero, bairro, cidade FROM endereco WHERE id = '%s'", id);
         Endereco endereco = null;
         try {
             stmt = conexao.createStatement();
@@ -117,8 +118,9 @@ public class EnderecoDaoH2 implements IDao<Endereco>{
         Integer id = resultado.getInt("id");
         String rua = resultado.getString("rua");
         String numero = resultado.getString("numero");
-        String cidade = resultado.getString("cidade");
         String bairro = resultado.getString("bairro");
+        String cidade = resultado.getString("cidade");
+
 
         return new Endereco(id, rua, numero, bairro, cidade);
     }

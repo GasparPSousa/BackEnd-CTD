@@ -70,7 +70,7 @@ public class PacienteDaoH2 implements IDao<Paciente> {
 
         Connection conexao = configuracaoJDBC.conectarComBancoDeDados();
         Statement stmt = null;
-        String query = String.format("SELECT id, nome, sobrenome, rg, dataCadastro, enderecoId FROM paciente WHERE id = '%s'", id);
+        String query = String.format("SELECT id, nome, sobrenome, rg, dataCadastro, endereco_id FROM paciente WHERE id = '%s'", id);
         Paciente paciente = null;
 
         try{
