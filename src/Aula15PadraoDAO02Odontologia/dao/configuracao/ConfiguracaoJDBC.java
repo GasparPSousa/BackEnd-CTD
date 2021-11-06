@@ -6,6 +6,7 @@ import java.sql.SQLException;
 
 public class ConfiguracaoJDBC {
 
+    //Atributos
     private String jdbcDriver;
     private String dbUrl;
     private String nomeUsuario;
@@ -31,11 +32,7 @@ public class ConfiguracaoJDBC {
     public Connection conectarComBancoDeDados() {
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection(
-                    dbUrl,
-                    nomeUsuario,
-                    senhaUsuario
-            );
+            connection = DriverManager.getConnection(dbUrl, nomeUsuario, senhaUsuario);
         }
         catch(SQLException e) {
             e.printStackTrace();

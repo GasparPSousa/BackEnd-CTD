@@ -3,13 +3,13 @@ package Aula15PadraoDAO02Odontologia.model;
 public class Endereco {
 
     private Integer id;
-    private Integer rua;
-    private Integer numero;
-    private Integer bairro;
-    private Integer cidade;
+    private String rua;
+    private String numero;
+    private String bairro;
+    private String cidade;
 
     // Construtor com todos os parâmetros
-    public Endereco(Integer id, Integer rua, Integer numero, Integer bairro, Integer cidade) {
+    public Endereco(Integer id, String rua, String numero, String bairro, String cidade) {
         this.id = id;
         this.rua = rua;
         this.numero = numero;
@@ -17,7 +17,7 @@ public class Endereco {
         this.cidade = cidade;
     }
 
-    public Endereco(Integer rua, Integer numero, Integer bairro, Integer cidade) {
+    public Endereco(String rua, String numero, String bairro, String cidade) {
         this.rua = rua;
         this.numero = numero;
         this.bairro = bairro;
@@ -32,35 +32,35 @@ public class Endereco {
         this.id = id;
     }
 
-    public Integer getRua() {
+    public String getRua() {
         return rua;
     }
 
-    public void setRua(Integer rua) {
+    public void setRua(String rua) {
         this.rua = rua;
     }
 
-    public Integer getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(Integer numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
-    public Integer getBairro() {
+    public String getBairro() {
         return bairro;
     }
 
-    public void setBairro(Integer bairro) {
+    public void setBairro(String bairro) {
         this.bairro = bairro;
     }
 
-    public Integer getCidade() {
+    public String getCidade() {
         return cidade;
     }
 
-    public void setCidade(Integer cidade) {
+    public void setCidade(String cidade) {
         this.cidade = cidade;
     }
 
